@@ -15,6 +15,7 @@ else
 }
 
 (function($){
+  console.log("js invoked");
   ui = {
     X : 40,
     Y : 40,
@@ -45,6 +46,7 @@ else
     removeObj();
   });
   $("#mover").click(function(){
+    console.log("mover invokde");
     clearContext({context:uilayercontext});
     ui.X+=10;ui.Y+=10;ui.Width+=10;ui.Height+=10;
     moveui({context: uilayercontext, w:ui.X,x:ui.Y,y:ui.Width,z:ui.Height});
